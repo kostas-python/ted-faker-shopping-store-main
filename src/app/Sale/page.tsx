@@ -61,9 +61,11 @@ const products = [
                     </a>
                   </h3>
                   <p className="text-sm text-gray-500">{product.description}</p>
-                  <div className="flex flex-1 flex-col justify-end">
-                    <p className="text-sm italic text-gray-500">{product.options}</p>
+                  <p className="text-sm italic text-gray-500">{product.options}</p>
+                  <div className="flex items-center justify-between">
                     <p className="text-base font-medium text-gray-900 line-through">{product.price}</p>
+                    <p className="text-base font-medium text-red-500 ml-4">{product.discount}</p>
+
                   </div>
                 </div>
               </div>
