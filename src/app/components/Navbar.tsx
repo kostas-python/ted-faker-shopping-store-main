@@ -15,7 +15,7 @@ const navigation = {
     {
       name: 'Women',
       featured: [
-        { name: 'Sale', href: '/sale' },
+        { name: 'Sale', href: '/Sale' },
         { name: 'Swimwear', href: 'swimwear' },
         { name: 'Underwear', href: '/underwear' },
       ],
