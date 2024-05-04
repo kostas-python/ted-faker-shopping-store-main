@@ -10,6 +10,7 @@ const products = [
       name: 'Basic Tee 8-Pack',
       href: '#',
       price: '$256',
+      discount: '$186',
       description: 'Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.',
       options: '8 colors',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg',
@@ -20,6 +21,7 @@ const products = [
       name: 'Basic Tee',
       href: '#',
       price: '$32',
+      discount: '$28',
       description: 'Look like a visionary CEO and wear the same black t-shirt every day.',
       options: 'Black',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-02.jpg',
@@ -61,7 +63,7 @@ const products = [
                   <p className="text-sm text-gray-500">{product.description}</p>
                   <div className="flex flex-1 flex-col justify-end">
                     <p className="text-sm italic text-gray-500">{product.options}</p>
-                    <p className="text-base font-medium text-gray-900">{product.price}</p>
+                    <p className="text-base font-medium text-gray-900">{product.price}{product.discount}</p>
                   </div>
                 </div>
               </div>
