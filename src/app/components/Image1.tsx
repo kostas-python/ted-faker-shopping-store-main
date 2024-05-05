@@ -12,7 +12,7 @@ export default function Sale() {
                 <br />
                 Up to 50% off.
               </h2>
-              <div className="mt-6 text-base">
+              <div className="animate-bounce mt-6 text-base">
                 <a href="/Sale" className="font-semibold text-white">
                   Shop the sale
                   <span aria-hidden="true"> &rarr;</span>
