@@ -44,39 +44,42 @@ export default function Stores() {
     <>
     <Navbar />
 
-    <div className="divide-y text-amber-500 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
-      {actions.map((action, actionIdx) => (
-        <div
-          key={action.title}
-          className={classNames(
-            actionIdx === 0 ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none' : '',
-            actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
-            actionIdx === actions.length - 2 ? 'sm:rounded-bl-lg' : '',
-            actionIdx === actions.length - 1 ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none' : '',
-            'group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500'
-          )}
-        >
-          <div className="flex items-center">
-            <span
-              className={classNames(
-                'inline-flex rounded-lg p-3 ring-4 ring-white'
-              )}
-            >
-              <action.icon className="h-6 w-6" aria-hidden="true" />
-            </span>
-            <h3 className="ml-4 text-base font-semibold leading-6 text-gray-900">
-              {action.title}
-            </h3>
+    <div className="flex justify-center my-12">
+      <div className="divide-y text-amber-500 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0 w-full max-w-6xl">
+        {actions.map((action, actionIdx) => (
+          <div
+            key={action.title}
+            className={classNames(
+              actionIdx === 0 ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none' : '',
+              actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
+              actionIdx === actions.length - 2 ? 'sm:rounded-bl-lg' : '',
+              actionIdx === actions.length - 1 ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none' : '',
+              'group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500'
+            )}
+          >
+            <div className="flex items-center">
+              <span
+                className={classNames(
+                  'inline-flex rounded-lg p-3 ring-4 ring-white'
+                )}
+              >
+                <action.icon className="h-6 w-6" aria-hidden="true" />
+              </span>
+              <h3 className="ml-4 text-base font-semibold leading-6 text-gray-900">
+                {action.title}
+              </h3>
+            </div>
+            <div className="mt-4">
+              <p className="text-sm text-gray-500">
+                {action.description}
+              </p>
+            </div>
           </div>
-          <div className="mt-4">
-            <p className="text-sm text-gray-500">
-              {action.description}
-            </p>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
     <Footer />
     </>
   )
 }
+
