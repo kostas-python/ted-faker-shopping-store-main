@@ -10,13 +10,19 @@ const actions = [
     description: '130 Thessaly Rd, Nine Elms, London SW8 5EJ, United Kingdom.',
     description1: '+447901076598',
     description2: [
-      'Monday: 8am - 9pm',
-      'Tuesday: 8am - 9pm',
+      'Monday:    8am - 9pm',
+      '',
+      'Tuesday:   8am - 9pm',
+      '',
       'Wednesday: 8am - 9pm',
-      'Thursday: 8am - 9pm',
-      'Friday: 8am - 9pm',
-      'Saturday: 8am - 9pm',
-      'Sunday: 8am - 9pm'
+      '',
+      'Thursday:  8am - 9pm',
+      '',
+      'Friday:    8am - 9pm',
+      '',
+      'Saturday:  8am - 9pm',
+      '',
+      'Sunday:    8am - 9pm'
     ]
   },
   {
@@ -24,35 +30,110 @@ const actions = [
     icon: MapPinIcon,
     description: 'University of, Oxford Rd, Manchester M13 9PL, United Kingdom.',
     icon2: PhoneIcon,
-    description1: '+447901076598'
+    description1: '+447901076598',
+    description2: [
+      'Monday:    8am - 9pm',
+      '',
+      'Tuesday:   8am - 9pm',
+      '',
+      'Wednesday: 8am - 9pm',
+      '',
+      'Thursday:  8am - 9pm',
+      '',
+      'Friday:    8am - 9pm',
+      '',
+      'Saturday:  8am - 9pm',
+      '',
+      'Sunday:    8am - 9pm'
+    ]
   },
   {
     title: 'Liverpool',
     icon: MapPinIcon,
     description: 'University of, Oxford Rd, Liverpool M13 9PL, United Kingdom.',
     icon2: PhoneIcon,
-    description1: '+447901076598'
+    description1: '+447901076598',
+    description2: [
+      'Monday:    8am - 9pm',
+      '',
+      'Tuesday:   8am - 9pm',
+      '',
+      'Wednesday: 8am - 9pm',
+      '',
+      'Thursday:  8am - 9pm',
+      '',
+      'Friday:    8am - 9pm',
+      '',
+      'Saturday:  8am - 9pm',
+      '',
+      'Sunday:    8am - 9pm'
+    ]
   },
   {
     title: 'Brighton',
     icon: MapPinIcon,
     description: 'Royal Pavilion Gardens, Brighton and Hove, Brighton BN1 1EE, United Kingdom.',
     icon2: PhoneIcon,
-    description1: '+447901076598'
+    description1: '+447901076598',
+    description2: [
+      'Monday:    8am - 9pm',
+      '',
+      'Tuesday:   8am - 9pm',
+      '',
+      'Wednesday: 8am - 9pm',
+      '',
+      'Thursday:  8am - 9pm',
+      '',
+      'Friday:    8am - 9pm',
+      '',
+      'Saturday:  8am - 9pm',
+      '',
+      'Sunday:    8am - 9pm'
+    ]
   },
   {
     title: 'Birmingham',
     icon: MapPinIcon,
     description: 'Royal Pavilion Gardens, Brighton and Hove, Birmingham BN1 1EE, United Kingdom.',
     icon2: PhoneIcon,
-    description1: '+447901076598'
+    description1: '+447901076598',
+    description2: [
+      'Monday:    8am - 9pm',
+      '',
+      'Tuesday:   8am - 9pm',
+      '',
+      'Wednesday: 8am - 9pm',
+      '',
+      'Thursday:  8am - 9pm',
+      '',
+      'Friday:    8am - 9pm',
+      '',
+      'Saturday:  8am - 9pm',
+      '',
+      'Sunday:    8am - 9pm'
+    ]
   },
   {
     title: 'Devon',
     icon: MapPinIcon,
     description: '130 Thessaly Rd, Nine Elms, Devon SW8 5EJ, United Kingdom.',
     icon2: PhoneIcon,
-    description1: '+447901076598'
+    description1: '+447901076598',
+    description2: [
+      'Monday:    8am - 9pm',
+      '',
+      'Tuesday:   8am - 9pm',
+      '',
+      'Wednesday: 8am - 9pm',
+      '',
+      'Thursday:  8am - 9pm',
+      '',
+      'Friday:    8am - 9pm',
+      '',
+      'Saturday:  8am - 9pm',
+      '',
+      'Sunday:    8am - 9pm'
+    ]
   },
 ]
 
@@ -106,21 +187,24 @@ export default function Stores() {
                   </div>
                 )}
               </div>
-              <div className="mt-4">
+              <div className="mt-4 text-center">
                 <p className="text-sm text-gray-500">
                   {action.description}
                 </p>
               </div>
               {action.description2 && (
-  <div className="mt-4 text-center">
-    {action.description2.map((line, index) => (
-      <p key={index} className="text-sm text-gray-500">
-        {line}
-      </p>
-    ))}
-  </div>
-)}
-
+              <div className="mt-4 text-center">
+                {action.description2.map((line, index) => (
+                  <p key={index} className="text-sm text-gray-500 leading-relaxed ">
+                    {line.split(':').map((part, partIndex) => (
+                      <span key={partIndex} className={partIndex === 0 ? 'mr-4' : ''}>
+                        {part}
+                      </span>
+                    ))}
+                  </p>
+                ))}
+              </div>
+            )}
             </div>
           ))}
         </div>
