@@ -8,7 +8,16 @@ const actions = [
     icon: MapPinIcon,
     icon2: PhoneIcon,
     description: '130 Thessaly Rd, Nine Elms, London SW8 5EJ, United Kingdom.',
-    description1: '+447901076598'
+    description1: '+447901076598',
+    description2: [
+      'Monday: 8am - 9pm',
+      'Tuesday: 8am - 9pm',
+      'Wednesday: 8am - 9pm',
+      'Thursday: 8am - 9pm',
+      'Friday: 8am - 9pm',
+      'Saturday: 8am - 9pm',
+      'Sunday: 8am - 9pm'
+    ]
   },
   {
     title: 'Manchester',
@@ -102,6 +111,16 @@ export default function Stores() {
                   {action.description}
                 </p>
               </div>
+              {action.description2 && (
+  <div className="mt-4 text-center">
+    {action.description2.map((line, index) => (
+      <p key={index} className="text-sm text-gray-500">
+        {line}
+      </p>
+    ))}
+  </div>
+)}
+
             </div>
           ))}
         </div>
