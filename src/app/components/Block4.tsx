@@ -43,7 +43,7 @@ const products = [
         href: '#',
         price: '$140',
         availability: 'White and black',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-02.jpg',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-05.jpg',
         imageAlt: 'Front of tote bag with washed black canvas body, black straps, and tan leather handles and accents.',
       },
       {
@@ -52,7 +52,7 @@ const products = [
         href: '#',
         price: '$220',
         availability: 'White and blue',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-03.jpg',
+        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-06.jpg',
         imageAlt:
           'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
       },
