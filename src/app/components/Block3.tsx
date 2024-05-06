@@ -4,7 +4,7 @@ const products = [
       id: 1,
       name: 'Black Basic Tee',
       price: '$32',
-      href: '#',
+      href: '/products/blackbasictee',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg',
       imageAlt: "Model wearing women's black cotton crewneck tee.",
     },
