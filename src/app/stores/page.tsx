@@ -152,10 +152,11 @@ export default function Stores() {
             <div
               key={action.title}
               className={classNames(
-                actionIdx === 0 ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none' : '',
+                actionIdx === 0 ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none ' : '',
                 actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
                 actionIdx === actions.length - 2 ? 'sm:rounded-bl-lg' : '',
                 actionIdx === actions.length - 1 ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none' : '',
+                actionIdx % 2 === 1 ? 'border-t border-gray-300' : '',
                 'group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500'
               )}
             >
