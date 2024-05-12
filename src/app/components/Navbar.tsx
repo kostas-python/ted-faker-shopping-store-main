@@ -16,7 +16,7 @@ const navigation = {
       name: 'Women',
       featured: [
         { name: 'Sale', href: '/Sale' },
-        { name: 'Summer', href: '/summerwomen' },
+        { name: 'Summer', href: '/components/summer/women' },
         { name: 'Underwear', href: '/underwear' },
       ],
       collection: [
@@ -37,7 +37,7 @@ const navigation = {
       name: 'Men',
       featured: [
         { name: 'Casual', href: '#' },
-        { name: 'Summer', href: '/summermen' },
+        { name: 'Summer', href: '/components/summer/men' },
         { name: 'Outdoor', href: '#' },
       ],
       collection: [
