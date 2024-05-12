@@ -1,3 +1,6 @@
+import 'animate.css';
+
+
 export default function Summer() {
   return (
     <div className="relative overflow-hidden bg-white">
