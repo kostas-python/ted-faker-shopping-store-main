@@ -7,7 +7,7 @@ import Footer from '../../Footer';
 
 
   
-  export default function Sale1() {
+  export default function Sale2() {
     return (
       <>
         <Navbar />
