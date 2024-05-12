@@ -2,6 +2,7 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import 'animate.css';
 
 
 const products = [
@@ -15,6 +16,9 @@ const products = [
       options: '8 colors',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg',
       imageAlt: 'Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.',
+      imageAnimation: {
+        enter: 'animate__animated animate__fadeInDown',
+      },
     },
     {
       id: 2,
@@ -26,6 +30,9 @@ const products = [
       options: 'Black',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-02.jpg',
       imageAlt: 'Front of plain black t-shirt.',
+      imageAnimation: {
+        enter: 'animate__animated animate__fadeInDown',
+      },
     },
     {
       id: 3,
@@ -37,6 +44,9 @@ const products = [
       options: 'White',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-03.jpg',
       imageAlt: 'Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.',
+      imageAnimation: {
+        enter: 'animate__animated animate__fadeInDown',
+      },
     },
     {
       id: 4,
@@ -48,6 +58,9 @@ const products = [
       options: 'Charcoal',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-04.jpg',
       imageAlt: 'Front of plain black t-shirt.',
+      imageAnimation: {
+        enter: 'animate__animated animate__fadeInUp',
+      },
     },
     {
       id: 5,
@@ -59,6 +72,9 @@ const products = [
       options: '3 colors',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-05.jpg',
       imageAlt: 'Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.',
+      imageAnimation: {
+        enter: 'animate__animated animate__fadeInUp',
+      },
     },
     {
       id: 6,
@@ -69,6 +85,9 @@ const products = [
       description: 'Get all 3 colors of our popular Linework design and some variety to your monotonous life.',
       options: '3 colors',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg',
+      imageAnimation: {
+        enter: 'animate__animated animate__fadeInUp',
+      },
       imageAlt: 'Front of plain black t-shirt.',
     },
     // More products...
@@ -76,49 +95,54 @@ const products = [
   
   export default function Sale1() {
     return (
-        <>
-        
+      <>
         <Navbar />
-
-      <div className="bg-white">
-        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-          <h2 className="sr-only">Products</h2>
   
-          <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
-            {products.map((product) => (
-              <div
-                key={product.id}
-                className="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
-              >
-                <div className="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96">
-                  <img
-                    src={product.imageSrc}
-                    alt={product.imageAlt}
-                    className="h-full w-full object-cover object-center sm:h-full sm:w-full"
-                  />
-                </div>
-                <div className="flex flex-1 flex-col space-y-2 p-4">
-                  <h3 className="text-sm font-medium text-gray-900">
-                    <a href={product.href}>
-                      <span aria-hidden="true" className="absolute inset-0" />
-                      {product.name}
-                    </a>
-                  </h3>
-                  <p className="text-sm text-gray-500">{product.description}</p>
-                  <p className="text-sm italic text-gray-500">{product.options}</p>
-                  <div className="flex items-center justify-between">
-                    <p className="text-base font-medium text-gray-900 line-through">{product.price}</p>
-                    <p className="text-base font-medium text-red-500 ml-4">{product.discount}</p>
-
+        <div className="bg-white">
+          <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+            <h2 className="sr-only">Products</h2>
+  
+            <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
+              {products.map((product) => (
+                <div
+                  key={product.id}
+                  className="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
+                >
+                  <div
+                    className={`aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96 ${product.imageAnimation?.enter}`}
+                  >
+                    <img
+                      src={product.imageSrc}
+                      alt={product.imageAlt}
+                      className="h-full w-full object-cover object-center sm:h-full sm:w-full"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col space-y-2 p-4">
+                    <h3 className="text-sm font-medium text-gray-900">
+                      <a href={product.href}>
+                        <span aria-hidden="true" className="absolute inset-0" />
+                        {product.name}
+                      </a>
+                    </h3>
+                    <p className="text-sm text-gray-500">{product.description}</p>
+                    <p className="text-sm italic text-gray-500">{product.options}</p>
+                    <div className="flex items-center justify-between">
+                      <p className="text-base font-medium text-gray-900 line-through">
+                        {product.price}
+                      </p>
+                      <p className="text-base font-medium text-red-500 ml-4">
+                        {product.discount}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-      <Footer />
+        <Footer />
       </>
-    )
+    );
   }
+  
   
