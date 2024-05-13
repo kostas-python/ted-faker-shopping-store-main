@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.animate-bounce {
+    animation: bounce 3s infinite;
+}
+  
+  

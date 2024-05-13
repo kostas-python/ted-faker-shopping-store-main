@@ -1,3 +1,5 @@
+import '/src/app/global.css';
+
 
 
 export default function Sale() {
