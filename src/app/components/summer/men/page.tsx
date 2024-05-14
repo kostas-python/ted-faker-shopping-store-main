@@ -12,12 +12,12 @@ import Footer from '../../Footer';
       const products = [
       {
         id: 1,
-        name: 'Focus Paper Refill',
+        name: 'Classic shirt',
         href: '#',
-        price: '$13',
-        description: '3 sizes available',
+        description: 'The soft, breathable cotton fabric ensures all-day comfort, while the simple design allows it to be easily dressed up or down. ',
         imageSrc: '/summermen1.jpg',
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+        price: '$13',
       },
       {
         id: 2,
@@ -50,7 +50,7 @@ import Footer from '../../Footer';
               Products
             </h2>
 
-            <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 bg-[url('/summerunsplash.jpg')] bg-cover bg-center">
+            <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 ">
               {products.map((product) => (
                 <a key={product.id} href={product.href} className="group">
                   <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
