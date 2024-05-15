@@ -12,30 +12,32 @@ import Footer from '../../Footer';
       const products = [
       {
         id: 1,
-        name: 'Classic shirt',
+        name: 'Green short sleeve shirt mens',
         href: '#',
-        description: 'The soft, breathable cotton fabric ensures all-day comfort, while the simple design allows it to be easily dressed up or down. ',
-        imageSrc: '/summermen1.jpg',
+        description: 'Printed graphic pattern scale design,Japanese inspired light cotton shirt.',
+        imageSrc: '/summermen2.jpg',
+        imageHover: '/summermen3.jpg',
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
         price: '$13',
       },
       {
-        id: 2,
-        name: 'Focus Card Holder',
+        name: 'Green short sleeve shirt mens',
         href: '#',
-        price: '$64',
-        description: 'Walnut',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-01-image-card-02.jpg',
-        imageAlt: 'Paper card sitting upright in walnut card holder on desk.',
+        description: 'Printed graphic pattern scale design,Japanese inspired light cotton shirt.',
+        imageSrc: '/summermen2.jpg',
+        imageHover: '/summermen3.jpg',
+        imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+        price: '$13',
       },
       {
         id: 3,
-        name: 'Focus Carry Case',
+        name: 'Green short sleeve shirt mens',
         href: '#',
-        price: '$32',
-        description: 'Heather Gray',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-01-image-card-03.jpg',
-        imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
+        description: 'Printed graphic pattern scale design,Japanese inspired light cotton shirt.',
+        imageSrc: '/summermen2.jpg',
+        imageHover: '/summermen3.jpg',
+        imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+        price: '$13',
       },
       // More products...
     ]
@@ -57,8 +59,13 @@ import Footer from '../../Footer';
                     <img
                       src={product.imageSrc}
                       alt={product.imageAlt}
-                      className="h-full w-full object-cover object-center group-hover:opacity-75"
+                      className="h-full w-full object-cover object-center group-hover:opacity-75 group-hover:bg-gray-200 transition duration-300 ease-in-out"
                     />
+                    <img
+                      src={product.imageHover}
+                      alt={product.imageAlt}
+                      className="h-full w-full object-cover object-center absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out"
+                     />
                   </div>
                   <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
                     <h3>{product.name}</h3>
