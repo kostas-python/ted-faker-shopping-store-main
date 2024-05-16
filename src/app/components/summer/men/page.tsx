@@ -50,7 +50,7 @@ import Footer from '../../Footer';
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
         price: '$13',
         imageObjectPosition: 'center',
-        imageZoomClass: 'group-hover:scale-150 transition duration-300 ease-in-out transform-gpu origin-center',
+        imageZoomClass: 'group-hover:scale-10 transition duration-300 ease-in-out transform-gpu origin-center',
       },
       {
         id: 5,
@@ -61,7 +61,7 @@ import Footer from '../../Footer';
         imageHover: '/summermen5.jpg',
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
         price: '$13',
-        imageZoomClass: 'group-hover:scale-110 transition duration-300 ease-in-out transform origin-center',
+        imageZoomClass: 'group-hover:scale-10 transition duration-300 ease-in-out transform origin-center',
       },
       {
         id: 6,
@@ -72,7 +72,7 @@ import Footer from '../../Footer';
         imageHover: '/summermen5.jpg',
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
         price: '$13',
-        imageZoomClass: 'group-hover:scale-110 transition duration-300 ease-in-out transform origin-center',
+        imageZoomClass: 'group-hover:scale-10 transition duration-300 ease-in-out transform origin-center',
       },
       // More products...
     ]
