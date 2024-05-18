@@ -36,9 +36,9 @@ const navigation = {
     {
       name: 'Men',
       featured: [
-        { name: 'Casual', href: '#' },
+        { name: 'Casual', href: '/casual' },
         { name: 'Summer', href: '/components/summer/men' },
-        { name: 'Outdoor', href: '#' },
+        { name: 'Outdoor', href: '/outdoor' },
       ],
       collection: [
         { name: 'Everything', href: '#' },
