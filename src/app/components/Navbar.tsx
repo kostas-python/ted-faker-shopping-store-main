@@ -21,9 +21,9 @@ const navigation = {
       ],
       collection: [
         { name: 'Dresses', href: '/dresses' },
-        { name: 'Core', href: '#' },
-        { name: 'New Arrivals', href: '#' },
-        { name: 'More', href: 'more' },
+        { name: 'Core', href: '/core' },
+        { name: 'New Arrivals', href: '/newarrivals' },
+        { name: 'More', href: '/more' },
       ],
       categories: [
         { name: 'Basic Tees', href: 'basictee' },
