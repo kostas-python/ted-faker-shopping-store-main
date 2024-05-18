@@ -30,7 +30,7 @@ const navigation = {
         { name: 'Artwork Tees', href: 'artworkteewomen' },
         { name: 'Bottoms', href: '/bottoms' },
         { name: 'Bags', href: '/bags' },
-        { name: 'Accessories', href: '/accesories' },
+        { name: 'Accessories', href: '/women/accesories' },
       ],
     },
     {
@@ -48,8 +48,8 @@ const navigation = {
       ],
       categories: [
         { name: 'Artwork Tees', href: '/artworkteemen' },
-        { name: 'Pants', href: '#' },
-        { name: 'Accessories', href: '#' },
+        { name: 'Pants', href: '/pants' },
+        { name: 'Accessories', href: '/menaccesories' },
         { name: 'Watches', href: '#' },
         { name: 'Basic Tees', href: '#' },
       ],
