@@ -11,7 +11,7 @@ const navigation = {
     social: [
       {
         name: 'Facebook',
-        href: 'www.facebook.com',
+        href: 'https://www.facebook.com',
         icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
