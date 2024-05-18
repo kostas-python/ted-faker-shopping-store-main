@@ -27,7 +27,7 @@ const navigation = {
       ],
       categories: [
         { name: 'Basic Tees', href: 'basictee' },
-        { name: 'Artwork Tees', href: 'artworktee' },
+        { name: 'Artwork Tees', href: 'artworkteewomen' },
         { name: 'Bottoms', href: '/bottoms' },
         { name: 'Bags', href: '/bags' },
         { name: 'Accessories', href: '/accesories' },
@@ -43,11 +43,11 @@ const navigation = {
       collection: [
         { name: 'Everything', href: '/everything' },
         { name: 'Work', href: '/work' },
-        { name: 'New Arrivals', href: '#' },
+        { name: 'New Arrivals', href: '/newaarivalsmen' },
         { name: 'Sale', href: '#' },
       ],
       categories: [
-        { name: 'Artwork Tees', href: '#' },
+        { name: 'Artwork Tees', href: '/artworkteemen' },
         { name: 'Pants', href: '#' },
         { name: 'Accessories', href: '#' },
         { name: 'Watches', href: '#' },
