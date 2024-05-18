@@ -41,8 +41,8 @@ const navigation = {
         { name: 'Outdoor', href: '/outdoor' },
       ],
       collection: [
-        { name: 'Everything', href: '#' },
-        { name: 'Work', href: '#' },
+        { name: 'Everything', href: '/everything' },
+        { name: 'Work', href: '/work' },
         { name: 'New Arrivals', href: '#' },
         { name: 'Sale', href: '#' },
       ],
