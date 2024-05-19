@@ -13,7 +13,7 @@ const products = [
       id: 1,
       name: 'Black Basic Tee',
       price: '$32',
-      href: 'products/whitebasictee',
+      href: '/products/blackbasictee',
       rating: 5,
       reviewCount: 38,
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg',
