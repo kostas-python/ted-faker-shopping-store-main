@@ -4,6 +4,7 @@ import Footer from "@/app/components/Footer"
 import Navbar from "@/app/components/Navbar"
 import { StarIcon } from '@heroicons/react/20/solid'
 import classNames from "classnames"
+import "animate.css"
 
 
 
@@ -17,6 +18,7 @@ const products = [
       reviewCount: 38,
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg',
       imageAlt: "Model wearing women's black cotton crewneck tee.",
+      animation: 'animate__rollIn'
     },
     {
         id: 2,
@@ -27,6 +29,7 @@ const products = [
         href: '/products/whitebasictee',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-02.jpg',
         imageAlt: "Model wearing women's black cotton crewneck tee.",
+        animation: 'animate__rollIn'
       },
       {
         id: 3,
@@ -37,6 +40,7 @@ const products = [
         href: '/products/mountainartoworktee',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-03.jpg',
         imageAlt: "Model wearing women's black cotton crewneck tee.",
+        animation: 'animate__rollIn'
       },
       {
         id: 4,
@@ -47,6 +51,7 @@ const products = [
         reviewCount: 28,
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg',
         imageAlt: "Model wearing women's black cotton crewneck tee.",
+        animation: 'animate__rollIn'
       },
       {
         id: 5,
@@ -57,6 +62,7 @@ const products = [
         href: '/products/whitebasictee',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-02.jpg',
         imageAlt: "Model wearing women's black cotton crewneck tee.",
+        animation: 'animate__rollIn'
       },
       {
         id: 6,
@@ -67,6 +73,7 @@ const products = [
         href: '/products/mountainartoworktee',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-03.jpg',
         imageAlt: "Model wearing women's black cotton crewneck tee.",
+        animation: 'animate__rollIn'
       },
     // More products...
   ]
@@ -90,7 +97,7 @@ const products = [
             <div className="mt-6 grid grid-cols-1 gap-y-10 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-0 lg:gap-x-8">
               {products.map((product) => (
                 <div key={product.id} className="group relative">
-                  <div className="h-96 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2 group-hover:opacity-75 sm:h-auto">
+                  <div className={`h-96 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2 group-hover:opacity-75 sm:h-auto ${product.animation} animate__animated`}>
                     <img
                       src={product.imageSrc}
                       alt={product.imageAlt}
