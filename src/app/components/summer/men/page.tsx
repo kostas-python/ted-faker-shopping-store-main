@@ -81,38 +81,45 @@ import Footer from '../../Footer';
       return (
         <>
             <Navbar />
-        <div className="bg-white">
-          <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-            <h2 id="products-heading" className="sr-only">
-              Products
-            </h2>
-
-            <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 ">
-              {products.map((product) => (
-                <a key={product.id} href={product.href} className="group">
-                  <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2 group">
-                  <img
-                    src={product.imageSrc}
-                    alt={product.imageAlt}
-                    className={`h-full w-full object-cover object-${product.imageObjectPosition} group-hover:opacity-75 group-hover:bg-gray-200 ${product.imageZoomClass}`}
-                  />
-                  <img
-                    src={product.imageHover}
-                    alt={product.imageAlt}
-                    className={`h-full w-full object-cover object-${product.imageObjectPosition} absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out transform-gpu origin-center`}
-                  />
-                </div>
-                  <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
-                    <h3>{product.name}</h3>
-                    <p>{product.price}</p>
-                  </div>
-                  <p className="mt-1 text-sm italic text-gray-500">{product.description}</p>
-                </a>
-              ))}
+            <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+              <img 
+              src="/summerunsplash.jpg" 
+              alt="Placeholder Image" 
+              className="w-full h-40 sm:h-56 lg:h-72 xl:h-96 rounded-lg shadow-lg object-cover"/>
             </div>
-          </div>
-        </div>
-        <Footer />
+
+            <div className="bg-white">
+              <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                <h2 id="products-heading" className="sr-only">
+                  Products
+                </h2>
+
+                <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 ">
+                  {products.map((product) => (
+                    <a key={product.id} href={product.href} className="group">
+                      <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2 group">
+                      <img
+                        src={product.imageSrc}
+                        alt={product.imageAlt}
+                        className={`h-full w-full object-cover object-${product.imageObjectPosition} group-hover:opacity-75 group-hover:bg-gray-200 ${product.imageZoomClass}`}
+                      />
+                      <img
+                        src={product.imageHover}
+                        alt={product.imageAlt}
+                        className={`h-full w-full object-cover object-${product.imageObjectPosition} absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out transform-gpu origin-center`}
+                      />
+                    </div>
+                      <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
+                        <h3>{product.name}</h3>
+                        <p>{product.price}</p>
+                      </div>
+                      <p className="mt-1 text-sm italic text-gray-500">{product.description}</p>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          <Footer />
         </>
       )
   }
