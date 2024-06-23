@@ -88,6 +88,11 @@ import Footer from '../../Footer';
               className="w-full h-40 sm:h-56 lg:h-72 xl:h-96 rounded-lg shadow-lg object-cover"/>
             </div>
 
+            <h2 className="text-3xl font-bold text-center mt-20  text-gray-900">Summer styles are here!</h2>
+              <p className="mt-4 text-gray-600 text-lg text-center max-w-2xl mx-auto">
+                Explore our summer styles, find all the summer stylish that suits you better!
+              </p>
+
             <div className="bg-white">
               <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
                 <h2 id="products-heading" className="sr-only">

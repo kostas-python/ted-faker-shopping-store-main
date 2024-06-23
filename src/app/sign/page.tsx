@@ -5,13 +5,14 @@ import React from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
+
 export default function Sign() {
     return (
       <>
       
       <Navbar/>
       
-        <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+        <div className="flex min-h-full flex-1 flex-col mt-48 px-6 py-12 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
             <img
               className="mx-auto h-10 w-auto"
@@ -23,6 +24,7 @@ export default function Sign() {
             </h2>
           </div>
   
+
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
             <form className="space-y-6" action="#" method="POST">
               <div>
@@ -41,6 +43,7 @@ export default function Sign() {
                 </div>
               </div>
   
+
               <div>
                 <div className="flex items-center justify-between">
                   <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
@@ -63,6 +66,7 @@ export default function Sign() {
                   />
                 </div>
               </div>
+
   
               <div>
                 <button
@@ -73,6 +77,7 @@ export default function Sign() {
                 </button>
               </div>
             </form>
+            
   
             <p className="mt-10 text-center text-sm text-gray-500">
               Not a member?{' '}
