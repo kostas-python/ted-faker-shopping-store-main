@@ -158,17 +158,24 @@ const features = [
   },
 ];
 
+
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
+
 
 export default function Stores() {
   return (
     <>
       <Navbar />
 
+      <h2 className="text-3xl font-bold text-center mt-20  text-gray-900">Our Stores</h2>
+      <p className="mt-4 text-gray-600 text-lg text-center max-w-2xl mx-auto">
+        Explore our multiple locations across the UK. Each store offers a unique shopping experience with a wide range of high-quality clothing items for every occasion.
+      </p>
+
       <div className="flex justify-center my-12">
-        <div className="divide-y text-amber-500 overflow-hidden rounded-lg mt-40 bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0 w-full max-w-6xl">
+        <div className="divide-y text-amber-500 overflow-hidden rounded-lg mt-20 bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0 w-full max-w-6xl">
           {actions.map((action, actionIdx) => (
             <div
               key={action.title}
@@ -231,6 +238,7 @@ export default function Stores() {
           ))}
         </div>
       </div>
+
       
 
     <div className="bg-white">
