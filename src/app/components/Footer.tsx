@@ -1,11 +1,16 @@
+
+// Footer section //
+
+
 import { JSX, SVGProps } from "react"
+
 
 const navigation = {
     main: [
-      { name: 'Contact Us', href: '/contact' },
+      { name: 'Contact Us', href: '/components/contact' },
       { name: 'Delivery & Returns', href: '/delivery' },
       { name: 'Careers', href: '/careers' },
-      { name: 'Stores', href: '/stores' },
+      { name: 'Stores', href: '/components/stores' },
       { name: 'Help & FAQ', href: '/help' },
     ],
     social: [

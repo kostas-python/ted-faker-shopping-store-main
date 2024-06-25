@@ -29,7 +29,7 @@ const navigation = {
         { name: 'Basic Tees', href: 'basictee' },
         { name: 'Artwork Tees', href: 'artworkteewomen' },
         { name: 'Bottoms', href: '/bottoms' },
-        { name: 'Bags', href: '/bags' },
+        { name: 'Bags', href: '/components/bags' },
         { name: 'Accessories', href: '/women/accesories' },
       ],
     },
@@ -56,8 +56,8 @@ const navigation = {
     },
   ],
   pages: [
-    { name: 'Contact Us', href: '/contact' },
-    { name: 'Stores', href: '/stores' },
+    { name: 'Contact Us', href: '/components/contact' },
+    { name: 'Stores', href: '/components/stores' },
   ],
 }
 

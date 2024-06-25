@@ -1,4 +1,6 @@
 
+// Bags Component//
+
 const products = [
     {
       id: 1,
@@ -65,7 +67,7 @@ const products = [
         <div className="mx-auto max-w-7xl overflow-hidden px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="sm:flex sm:items-baseline sm:justify-between">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900">Bags</h2>
-            <a href="/pages/bags" className="hidden mb-5 text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
+            <a href="/components/bags" className="hidden mb-5 text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
               Browse all Bags
               <span aria-hidden="true"> &rarr;</span>
             </a>

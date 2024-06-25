@@ -1,7 +1,7 @@
 import { MapPinIcon, PhoneIcon } from '@heroicons/react/24/outline'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import GoogleMap from '../components/GoogleMap'
+import Footer from '../Footer'
+import Navbar from '../Navbar'
+import GoogleMap from '../GoogleMap'
 
 const actions = [
   {

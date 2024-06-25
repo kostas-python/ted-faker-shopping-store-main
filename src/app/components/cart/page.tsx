@@ -1,8 +1,8 @@
 
 import { CheckIcon, ClockIcon, QuestionMarkCircleIcon, XMarkIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import Navbar from '../Navbar'
+import Footer from '../Footer'
 
 //  Products Array //
 
