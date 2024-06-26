@@ -244,7 +244,7 @@ export default function Navbar() {
         <nav aria-label="Top">
           {/* Top navigation */}
           <div className="bg-gray-900">
-            <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
               {/* Currency selector */}
               <form className="hidden lg:block lg:flex-1">
                 <div className="flex">
@@ -288,14 +288,14 @@ export default function Navbar() {
           <div className="bg-white">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="border-b border-gray-200">
-                <div className="flex h-16 items-center justify-between">
+                <div className="flex h-20 items-center justify-between">
                   {/* Logo (lg+) */}
                   <div className="hidden lg:flex lg:items-center">
                     <a href="/">
                       <span className="sr-only">Your Company</span>
                       <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                        className="h-14 w-auto  "
+                        src="/logo4.png"
                         alt=""
                       />
                     </a>
@@ -444,9 +444,9 @@ export default function Navbar() {
                   <a href="#" className="lg:hidden">
                     <span className="sr-only">Your Company</span>
                     <img
-                      src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                      src="/logo4.png"
                       alt=""
-                      className="h-8 w-auto"
+                      className="h-14 w-auto bg-gradient-to-r from-cyan-500 to-blue-500 "
                     />
                   </a>
 
