@@ -1,0 +1,6 @@
+@ted_faker_shopping_store_main_HostAddress = http://localhost:5270
+
+GET {{ted_faker_shopping_store_main_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

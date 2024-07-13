@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/ted-faker-shopping-store-main.props" />
+</Project>
