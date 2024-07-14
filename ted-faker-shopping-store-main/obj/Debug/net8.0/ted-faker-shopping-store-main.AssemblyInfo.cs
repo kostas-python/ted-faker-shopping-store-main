@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ted-faker-shopping-store-main")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79120c0ddc288a3cd8931fbc24f4086910676ed7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d06f22cd7d9ae6910fe41d7f8c4c15ffde3553f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("ted-faker-shopping-store-main")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ted-faker-shopping-store-main")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

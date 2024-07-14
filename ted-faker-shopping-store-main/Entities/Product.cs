@@ -21,6 +21,8 @@ namespace src.app.Entities
         
         public string Imagesrc { get; set; }
 
+        public string Type { get; set; }
+
         public int QuantityInStock { get; set; }
     }
 }
