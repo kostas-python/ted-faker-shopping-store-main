@@ -8,7 +8,7 @@ const products = [
       href: '#',
       price: '$50',
       availability: 'White and Black',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-01.jpg',
+      imageSrc: 'nomadpouch.jpg',
       imageAlt: 'White fabric pouch with white zipper, black zipper pull, and black elastic loop.',
     },
     {
@@ -17,7 +17,7 @@ const products = [
       href: '#',
       price: '$140',
       availability: 'Washed Black',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-02.jpg',
+      imageSrc: 'bag2.jpg',
       imageAlt: 'Front of tote bag with washed black canvas body, black straps, and tan leather handles and accents.',
     },
     {
@@ -26,7 +26,7 @@ const products = [
       href: '#',
       price: '$220',
       availability: 'Blue',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-03.jpg',
+      imageSrc: 'bag3.jpg',
       imageAlt:
         'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
     },
@@ -36,7 +36,7 @@ const products = [
         href: '#',
         price: '$210',
         availability: 'Black and orage',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-04.jpg',
+        imageSrc: 'bag4.jpg',
         imageAlt: 'White fabric pouch with white zipper, black zipper pull, and black elastic loop.',
       },
       {
@@ -45,7 +45,7 @@ const products = [
         href: '#',
         price: '$140',
         availability: 'White and black',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-05.jpg',
+        imageSrc: '/bag5.jpg',
         imageAlt: 'Front of tote bag with washed black canvas body, black straps, and tan leather handles and accents.',
       },
       {
@@ -54,7 +54,7 @@ const products = [
         href: '#',
         price: '$220',
         availability: 'White and blue',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-06.jpg',
+        imageSrc: '/bag6.jpg',
         imageAlt:
           'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
       },
