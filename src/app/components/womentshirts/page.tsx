@@ -17,7 +17,7 @@ const products = [
       href: '/products/blackbasictee',
       rating: 5,
       reviewCount: 38,
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg',
+      imageSrc: '/tee1.jpg',
       imageAlt: "Model wearing women's black cotton crewneck tee.",
       animation: 'animate__rollIn'
     },
@@ -28,7 +28,7 @@ const products = [
         rating: 5,
         reviewCount: 18,
         href: '/products/whitebasictee',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-02.jpg',
+        imageSrc: '/tee2.jpg',
         imageAlt: "Model wearing women's black cotton crewneck tee.",
         animation: 'animate__rollIn'
       },
@@ -39,7 +39,7 @@ const products = [
         rating: 5,
         reviewCount: 76,
         href: '/products/mountainartoworktee',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-03.jpg',
+        imageSrc: '/tee3.jpg',
         imageAlt: "Model wearing women's black cotton crewneck tee.",
         animation: 'animate__rollIn'
       },
@@ -50,7 +50,7 @@ const products = [
         href: '#',
         rating: 5,
         reviewCount: 28,
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg',
+        imageSrc: '/tee1.jpg',
         imageAlt: "Model wearing women's black cotton crewneck tee.",
         animation: 'animate__rollIn'
       },
@@ -61,7 +61,7 @@ const products = [
         rating: 5,
         reviewCount: 78,
         href: '/products/whitebasictee',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-02.jpg',
+        imageSrc: '/tee2.jpg',
         imageAlt: "Model wearing women's black cotton crewneck tee.",
         animation: 'animate__rollIn'
       },
@@ -72,7 +72,7 @@ const products = [
         rating: 5,
         reviewCount: 98,
         href: '/products/mountainartoworktee',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-03.jpg',
+        imageSrc: '/tee3.jpg',
         imageAlt: "Model wearing women's black cotton crewneck tee.",
         animation: 'animate__rollIn'
       },
