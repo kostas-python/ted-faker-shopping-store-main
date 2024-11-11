@@ -8,7 +8,7 @@ const products = [
       name: 'Black Basic Tee',
       price: '$32',
       href: '/products/blackbasictee',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg',
+      imageSrc: '/tee1.jpg',
       imageAlt: "Model wearing women's black cotton crewneck tee.",
     },
     {
@@ -16,7 +16,7 @@ const products = [
       name: 'Off-White Basic Tee',
       price: '$32',
       href: '/products/whitebasictee',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-02.jpg',
+      imageSrc: '/tee2.jpg',
       imageAlt: "Model wearing women's black cotton crewneck tee.",
     },
     {
@@ -24,7 +24,7 @@ const products = [
       name: 'Mountains Artwork Tee',
       price: '$36',
       href: '/products/mountainartoworktee',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-03.jpg',
+      imageSrc: '/tee3.jpg',
       imageAlt: "Model wearing women's black cotton crewneck tee.",
     },
     // More products...
